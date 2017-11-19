@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do App</title>
+  </head>
+
+  <body>
+    <h1></h1>
+
+
+    <TABLE BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
+
+
+       <TR>
+          <TH COLSPAN="2"><BR><H3>TO DO LIST</H3>
+          </TH>
+       </TR>
+       <TR ALIGN="CENTER">
+          <TD> {{ task1 }} </TD>
+       </TR>
+       <TR ALIGN="CENTER">
+          <TD> {{ task2 }} </TD>
+       </TR>
+       <TR ALIGN="CENTER">
+          <TD> {{ task3 }}</TD>
+       </TR>
+    </TABLE>
+
+    <div>
+    <p>Add To Do Item</p>
+    <form action ="/submit" method="POST">
+    Task 1:
+    <input type="text" name="task1"></input><br>
+    Task 2:
+    <input type="text" name="task2"></input><br>
+    Task 3:
+    <input type="text" name="task3"></input><br>
+
+    <br>E-mail:
+    <input type="text" name="email"></input><br>
+    <br>Priority:
+    <select name="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select><br>
+    <br><input type="submit" value="Add To Do Item">
+    </form>
+
+    <form action ="/clear" method="POST">
+      <input type="submit" value="Clear">
+    </form>
+
+
+  </body>
+</html>
